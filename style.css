@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eefaf0;
+}
+.text {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 10%;
+    top: 15%;
+    border: none;
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    background-color: #eefaf0;
+    color: #172f0c;
+
+}
+
+.text:focus, .text:active {
+    border: none;
+    outline: none;
+
+}
+
+.termino {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.termino p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #132a09;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones {
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+    position: absolute;
+    
+}
+
+.button-encript {
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 8px;
+    width: 25%;
+    background-color: #1e5c1e;
+    border-radius: 15px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 5%;
+}
+
+
+
+.button-desencriptar {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 8px;
+    width: 25%;
+    background-color: #4f9d4f;
+    border-radius: 15px;
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #4f9d4f;
+    font-weight: 400;
+    
+}
+
+.button-desencriptar:hover,.button-encript:hover{
+    padding: 1%;
+    background: #47be3b;
+    transform: scale(1.08);
+}
+
+.secret{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #56a44f;
+    box-shadow: 0px 24px 12px -8px rgb(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.text_encriptado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+    color: #132a09;
+
+}
+
+.text_encriptado h2 {
+    width: 60%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.text_encriptado p{
+    width: 80%;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.secret img{
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    top: 10%;
+}
+
+/* Diseño en cel */
+
+@media (max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .encrip{
+        width: 100%;
+    }
+    .text{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .termino{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+
+    }
+    .termino p{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .button-encript,.button-desencriptar{
+        width: 48%;
+        border-radius: 10px;
+    }
+    .button-encript:hover, .button-desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .secret{
+        width: 80%;
+        height: 20%;
+        left: 10%;
+        top: 80%;
+    }
+    .text_encriptado{
+        width: 100%;
+        top: 5%;
+    }
+    .secret img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
